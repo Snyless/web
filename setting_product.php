@@ -54,10 +54,10 @@
                               ?>
                             <ul class="cart-header simpleCart-shelfItem">
                                 <form action="" method="post"> <button class="close3" type="submit" name=<?php echo $req['ID']; ?>></button></form>
-                             <li><span class="item_price"><?php echo $req['username']; ?></span></li>                           
-                             <li><span><?php echo $req['date_inscription']; ?></span></li>
-                             <li><span class="item_price"><?php echo $req['email']; ?></span></li>
-                             <li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>						
+                             <li><span class="item_price"><?php echo $req['nom']; ?></span></li>                           
+                             <li><span><?php echo $req['categorie']; ?></span></li>
+                             <li><span class="item_price"><?php echo $req['prix']; ?></span></li>
+                             <li> <a href="#" class="add-cart cart-check item_add"data-toggle="modal" data-target="#add_product">Modify</a></li>						
 
                                   <div class="clearfix"> </div>
 				            </ul>

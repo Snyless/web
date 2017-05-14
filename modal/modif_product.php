@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div id="add_product" class="modal fade" role="dialog">
+<div id="modif_product" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -9,7 +9,7 @@
         <h3 class="modal-title">New Product !</h3>
       </div>
       <div class="modal-body">
-        <form role="form" action="modal/script_product.php" method="POST" class="form-horizontal" id="tache_form">
+        <form role="form" action="modal/script_modif.php" method="POST" class="form-horizontal" id="tache_form">
         <div id="holder">
               <div class="form-group">
               <label class="control-label col-md-3" for="name"> Name</label>
@@ -61,7 +61,7 @@
          <div class="row">
            <div class="col-md-12">
           
-             <button class="btn btn-sm btn-warning pull-right" type="submit" name="add_group">ADD Product</button>
+             <button class="btn btn-sm btn-warning pull-right" type="submit" name="add_group">Modify Product</button>
            </div>
          </div>
        </form>  
