@@ -214,6 +214,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li id="header_administrateur" style="display:none;">
                             <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
+                          <li id="header_produit" style="display:none;">
+                            <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Setting product</a>
+                        </li>
                         <li class="divider"></li>
                         <li>
                             <a href="deconexion.php"><i class="fa fa-fw fa-power-off"></i> Log Out</a>

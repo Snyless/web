@@ -27,6 +27,8 @@
 ?>                         
                             <script>
 					            document.getElementById('header_administrateur').style.display="block"; <!-- apparaitre le bouton plateforme -->
+                         document.getElementById('header_produit').style.display="block"; <!-- apparaitre le bouton plateforme -->
+
                             </script>								
 <?php
                               }
