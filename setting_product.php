@@ -1,10 +1,10 @@
 <?php include 'includes/header.php'; ?>
-
+<?php include 'modal/add_product.php'; ?>
 <div class="ckeckout">
 		<div class="container">
 			<div class="ckeckout-top">
 			<div class=" cart-items heading">
-			 <h1><li style="list-style:none;"> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>	</h1>
+			 <h1><li style="list-style:none;"> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#add_product">Add Product</a></li>	</h1>
 				<?php 
 					    try
 						    {
@@ -18,13 +18,14 @@
 		                    }
 							
 						
-						$req1=$bd->query('select * from membre where role="client"');
+						$req1=$bd->query('select * from produit');
 						while($data1=$req1->fetch())
-						{   if(isset($_POST[$data1['username']])){
-								$delete=$bd->prepare('delete from client where username=?');
-								$delete->execute(array($data1['username']));
-								$deleted=$bd->prepare('delete from membre where username=?');
-								$deleted->execute(array($data1['username']));
+						{   if(isset($_POST[$data1['ID']])){
+								$delete=$bd->prepare('delete from panier where ID_prod=?');
+								$delete->execute(array($data1['ID_prod']));
+								$deleted=$bd->prepare('delete from (select * from produit p,s_categorie c where p.categorie=c.categorie) where ID=?');
+								$deleted->execute(array($data1['ID']));
+                            
 								break;
 							}
 						}
@@ -36,7 +37,7 @@
 				
 			<div class="in-check">
 				<ul class="unit">
-					<li><span>Username</span></li>
+					<li><span>Product</span></li>
 					<li><span>Date inscription</span></li>		
 					<li><span>email</span></li>
 					<li><span>Details Edit </span></li>
@@ -46,16 +47,18 @@
                 <?php
                
 						  //requete client !
-						  $reponse=$bd->prepare('SELECT * FROM membre where role="client"');
+						  $reponse=$bd->prepare('SELECT * FROM produit');
 		                  $reponse->execute();
                 
 						  while($req=$reponse->fetch()){
                               ?>
                             <ul class="cart-header simpleCart-shelfItem">
-                                <form action="" method="post"> <button class="close3" type="submit" name=<?php echo $req['username']; ?>></button></form>
+                                <form action="" method="post"> <button class="close3" type="submit" name=<?php echo $req['ID']; ?>></button></form>
                              <li><span class="item_price"><?php echo $req['username']; ?></span></li>                           
                              <li><span><?php echo $req['date_inscription']; ?></span></li>
                              <li><span class="item_price"><?php echo $req['email']; ?></span></li>
+                             <li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>						
+
                                   <div class="clearfix"> </div>
 				            </ul>
                 

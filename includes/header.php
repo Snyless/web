@@ -59,125 +59,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					        	   <li><a href="index.php">Home</a></li>
 						             <li class="dropdown">
 						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
-						            <ul class="dropdown-menu multi-column columns-3">
+						             <ul class="dropdown-menu multi-column columns-1">
 							            <div class="row">
-								            <div class="col-sm-4">
+								            <div class="col">
 									            <ul class="multi-column-dropdown">
-										            <li><a href="product-m.php">Accessories</a></li>
-										            <li><a href="product-m.php">Bags</a></li>
-										            <li><a href="product-m.php">Cap & Hats</a></li>
-										            <li><a href="product-m.php">Tops</a></li>
-										            <li><a href="product-m.php">Jackets & Coats</a></li>
-										            <li><a href="product-m.php">wallets</a></li>
-										            <li><a href="product-m.php">Jeans</a></li>
+										            <li><a href="product.php">Cap & Hats</a></li>
+										            <li><a href="product.php">Jackets & Coats</a></li>
+										            <li><a href="product.php">Jeans</a></li>
+										            <li><a href="product.php">Shirts</a></li>
+										            <li><a href="product.php">Shoes,Boots</a></li>
+										            <li><a href="product.php">Shorts</a></li>
 									            </ul>
 								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product-m.php">Shirts</a></li>
-										            <li><a href="product-m.php">Shoes,Boots</a></li>
-										            <li><a href="product-m.php">Shorts</a></li>
-										             <li><a href="product-m.php">Watches</a></li>
-										            <li><a href="product-m.php">Sunglasses</a></li>
-										             <li><a href="product-m.php">Bands</a></li>
-										            <li><a href="product-m.php">Swimwear</a></li>
-									            </ul>
-								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product-m.php">Jewellery</a></li>
-										            <li><a href="product-m.php">Jack & Jones</a></li>
-										            <li><a href="product-m.php">Ray-Ban</a></li>
-										             <li><a href="product-m.php">Lipsticks</a></li>
-										            <li><a href="product-m.php">Longer wear</a></li>
-										            <li><a href="product-m.php">sarees</a></li>
-										            <li><a href="product-m.php">Nike</a></li>
-									            </ul>
-								            </div>
+								            
 							            </div>
 						            </ul>
 						        </li>
 						            <li class="dropdown">
 						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
-						            <ul class="dropdown-menu multi-column columns-3">
+						            <ul class="dropdown-menu multi-column columns-1">
 							            <div class="row">
-								            <div class="col-sm-4">
+								            <div class="col">
 									            <ul class="multi-column-dropdown">
-										            <li><a href="product.php">Accessories</a></li>
-										            <li><a href="product.php">Bags</a></li>
 										            <li><a href="product.php">Cap & Hats</a></li>
-										            <li><a href="product.php">Tops</a></li>
 										            <li><a href="product.php">Jackets & Coats</a></li>
-										            <li><a href="product.php">wallets</a></li>
 										            <li><a href="product.php">Jeans</a></li>
-									            </ul>
-								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
 										            <li><a href="product.php">Shirts</a></li>
 										            <li><a href="product.php">Shoes,Boots</a></li>
 										            <li><a href="product.php">Shorts</a></li>
-										             <li><a href="product.php">Watches</a></li>
-										            <li><a href="product.php">Sunglasses</a></li>
-										             <li><a href="product.php">Bands</a></li>
-										            <li><a href="product.php">Swimwear</a></li>
 									            </ul>
 								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product.php">Jewellery</a></li>
-										            <li><a href="product.php">Jack & Jones</a></li>
-										            <li><a href="product.php">Ray-Ban</a></li>
-										             <li><a href="product.php">Lipsticks</a></li>
-										            <li><a href="product.php">Longer wear</a></li>
-										            <li><a href="product.php">sarees</a></li>
-										            <li><a href="product.php">Nike</a></li>
-									            </ul>
-								            </div>
+								            
 							            </div>
 						            </ul>
 						        </li>
 						         <li class="dropdown">
 						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kids<b class="caret"></b></a>
-						            <ul class="dropdown-menu multi-column columns-3">
+						            <ul class="dropdown-menu multi-column columns-1">
 							            <div class="row">
-								            <div class="col-sm-4">
+								            <div class="col">
 									            <ul class="multi-column-dropdown">
-										            <li><a href="product-k.php">Accessories</a></li>
-										            <li><a href="product-k.php">Bags</a></li>
-										            <li><a href="product-k.php">Cap & Hats</a></li>
-										            <li><a href="product-k.php">Tops</a></li>
-										            <li><a href="product-k.php">Jackets & Coats</a></li>
-										            <li><a href="product-k.php">wallets</a></li>
-										            <li><a href="product-k.php">Jeans</a></li>
+										            <li><a href="product.php">Cap & Hats</a></li>
+										            <li><a href="product.php">Jackets & Coats</a></li>
+										            <li><a href="product.php">Jeans</a></li>
+										            <li><a href="product.php">Shirts</a></li>
+										            <li><a href="product.php">Shoes,Boots</a></li>
+										            <li><a href="product.php">Shorts</a></li>
 									            </ul>
 								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product-k.php">Shirts</a></li>
-										            <li><a href="product-k.php">Shoes,Boots</a></li>
-										            <li><a href="product-k.php">Shorts</a></li>
-										             <li><a href="product-k.php">Watches</a></li>
-										            <li><a href="product-k.php">Sunglasses</a></li>
-										             <li><a href="product-k.php">Bands</a></li>
-										            <li><a href="product-k.php">Swimwear</a></li>
-									            </ul>
-								            </div>
-								            <div class="col-sm-4">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product-k.php">Jewellery</a></li>
-										            <li><a href="product-k.php">Jack & Jones</a></li>
-										            <li><a href="product-k.php">Ray-Ban</a></li>
-										             <li><a href="product-k.php">Lipsticks</a></li>
-										            <li><a href="product-k.php">Longer wear</a></li>
-										            <li><a href="product-k.php">sarees</a></li>
-										            <li><a href="product-k.php">Nike</a></li>
-									            </ul>
-								            </div>
+								            
 							            </div>
 						            </ul>
+						           
 						        </li>
-						        <li><a href="contact.php">Contact</a></li>
+						        
 					        </ul>
 					    </div>
 					    <!--/.navbar-collapse-->
@@ -215,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Settings</a>
                         </li>
                           <li id="header_produit" style="display:none;">
-                            <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Setting product</a>
+                            <a href="setting_product.php"><i class="fa fa-fw fa-gear"></i> Setting product</a>
                         </li>
                         <li class="divider"></li>
                         <li>
