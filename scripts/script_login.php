@@ -1,7 +1,5 @@
 <?php
       
-       
-	   
        if(isset($_POST['connexion']))
 	          {
 				    if(!empty($_POST['username']) && !empty($_POST['password']))
@@ -35,6 +33,7 @@
 						       
 							   session_start();
 							   $_SESSION['username']=$req['username'];
+							   $_SESSION['connected']=true;
 							   header("Location:index.php");
 							}
 					  }

@@ -4,9 +4,12 @@
 ?>
 <div class="ckeckout">
 		<div class="container">
+		
+				<h2 >Gestion Produits</h2>
 			<div class="ckeckout-top">
 			<div class=" cart-items heading">
-			 <h1><li style="list-style:none;"> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#add_product">Add Product</a></li>	</h1>
+			 <h1><li style="list-style:none;"> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#add_product">
+			 	Add Product</a></li>	</h1>
 				<?php 
 					    try
 						    {
@@ -40,27 +43,29 @@
 				
 			<div class="in-check">
 				<ul class="unit">
-					<li><span>Product</span></li>
-					<li><span>Date inscription</span></li>		
-					<li><span>email</span></li>
-					<li><span>Details Edit </span></li>
-					<li> </li>
+					<li><span>Produit</span></li>
+					
+					
+					<li><span>pour</span></li>			
+					<li><span>Prix</span></li>
+					<li><span>modifier</span></li>
 					<div class="clearfix"> </div>
 				</ul>
                 <?php
                
 						  //requete client !
-						  $reponse=$bd->prepare('SELECT * FROM produit');
+						  $reponse=$bd->prepare('SELECT * FROM produit p,s_categorie ');
 		                  $reponse->execute();
                 
 						  while($req=$reponse->fetch()){
                               ?>
                             <ul class="cart-header simpleCart-shelfItem">
-                                <form action="" method="post"> <button class="close3" type="submit" name=<?php echo $req['ID']; ?>></button></form>
+                                <form action="" method="post"> 
+                              <button class="close3" type="submit" name=<?php echo $req['ID']; ?>></button></form>
                              <li><span class="item_price"><?php echo $req['nom']; ?></span></li>                           
                              <li><span><?php echo $req['categorie']; ?></span></li>
                              <li><span class="item_price"><?php echo $req['prix']; ?></span></li>
-                             <li> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#modif_product">Modify</a></li>						
+                             <li> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#modif_product">modifier</a></li>						
 
                                   <div class="clearfix"> </div>
 				            </ul>
