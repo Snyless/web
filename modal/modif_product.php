@@ -6,7 +6,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h3 class="modal-title">New Product !</h3>
+        <h3 class="modal-title">Modify Product ! </h3>
       </div>
       <div class="modal-body">
         <form role="form" action="modal/script_modif.php" method="POST" class="form-horizontal" id="tache_form">

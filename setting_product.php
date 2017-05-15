@@ -1,5 +1,7 @@
 <?php include 'includes/header.php'; ?>
-<?php include 'modal/add_product.php'; ?>
+<?php include 'modal/add_product.php';
+      include 'modal/modif_product.php';    
+?>
 <div class="ckeckout">
 		<div class="container">
 			<div class="ckeckout-top">
@@ -21,10 +23,11 @@
 						$req1=$bd->query('select * from produit');
 						while($data1=$req1->fetch())
 						{   if(isset($_POST[$data1['ID']])){
-								$delete=$bd->prepare('delete from panier where ID_prod=?');
-								$delete->execute(array($data1['ID_prod']));
-								$deleted=$bd->prepare('delete from (select * from produit p,s_categorie c where p.categorie=c.categorie) where ID=?');
+                            $deleted=$bd->prepare('delete from s_categorie where categorie in(select categorie from produit where ID= ?)');
 								$deleted->execute(array($data1['ID']));
+								$delete=$bd->prepare('delete from produit where ID=?');
+								$delete->execute(array($data1['ID']));
+								
                             
 								break;
 							}
@@ -57,7 +60,7 @@
                              <li><span class="item_price"><?php echo $req['nom']; ?></span></li>                           
                              <li><span><?php echo $req['categorie']; ?></span></li>
                              <li><span class="item_price"><?php echo $req['prix']; ?></span></li>
-                             <li> <a href="#" class="add-cart cart-check item_add"data-toggle="modal" data-target="#add_product">Modify</a></li>						
+                             <li> <a class="add-cart cart-check item_add"data-toggle="modal" data-target="#modif_product">Modify</a></li>						
 
                                   <div class="clearfix"> </div>
 				            </ul>
