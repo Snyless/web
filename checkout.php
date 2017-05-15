@@ -1,65 +1,72 @@
+<?php include 'includes/header.php'; ?>
 
-<?php include 'includes/header.php'; 
-?>
-<!--start-ckeckout-->
-	<div class="ckeckout">
+<div class="ckeckout">
 		<div class="container">
 			<div class="ckeckout-top">
 			<div class=" cart-items heading">
-			 <h1>My Shopping Bag (3)</h1>
-				<script>$(document).ready(function(c) {
-					$('.close1').on('click', function(c){
-						$('.cart-header').fadeOut('slow', function(c){
-							$('.cart-header').remove();
-						});
-						});	  
-					});
-			   </script>
-			<script>$(document).ready(function(c) {
-					$('.close2').on('click', function(c){
-						$('.cart-header1').fadeOut('slow', function(c){
-							$('.cart-header1').remove();
-						});
-						});	  
-					});
-			   </script>
-			   <script>$(document).ready(function(c) {
-					$('.close3').on('click', function(c){
-						$('.cart-header2').fadeOut('slow', function(c){
-							$('.cart-header2').remove();
-						});
-						});	  
-					});
-			   </script>
+			 <h1>Panier</h1>
+				<?php 
+					    try
+						    {
+							     $bd=new PDO('mysql:host=localhost;dbname=data_projet;charset=utf8','root','',
+	                             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+						    }
+			  
+                          catch(Exception $e)
+						    {
+	                             die('Erreur : '.$e->getMessage());
+		                    }
+							
+						
+						$req1=$bd->query('select * from membre where role="client"');
+						while($data1=$req1->fetch())
+						{   if(isset($_POST[$data1['username']])){
+								$delete=$bd->prepare('delete from client where username=?');
+								$delete->execute(array($data1['username']));
+								$deleted=$bd->prepare('delete from membre where username=?');
+								$deleted->execute(array($data1['username']));
+								break;
+							}
+						}
+						
+						
+						
+					?>
+			  
 				
-			<div class="in-check" >
+			<div class="in-check">
 				<ul class="unit">
-					<li><span>Item</span></li>
-					<li><span>Product Name</span></li>		
-					<li><span>Unit Price</span></li>
-					<li><span>Delivery Details</span></li>
+					<li><span>Username</span></li>
+					<li><span>Date inscription</span></li>		
+					<li><span>email</span></li>
+					<li><span>Details Edit </span></li>
 					<li> </li>
 					<div class="clearfix"> </div>
 				</ul>
-				<ul class="cart-header simpleCart_shelfItem">
-					<div class="close1"> </div>
-						<li class="ring-in"><a href="single.php" ><img src="images/c.jpg" class="img-responsive" alt=""></a>
-						</li>
-						<li><span>Bracelets</span></li>
-						<li><span class="item_price">$ 290.00</span></li>
-						<li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>				
-					<div class="clearfix"> </div>
-				</ul>
-				<ul class=" cart-header1 simpleCart_shelfItem">
-					<div class="close2"> </div>
-						<li class="ring-in"><a href="single.php" ><img src="images/c2.jpg" class="img-responsive" alt=""></a>
-						</li>
-						<li><span>Watches</span></li>
-						<li><span class="item_price">$ 300.00</span></li>
-						<li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>						
-						<div class="clearfix"> </div>
-				</ul>
-				<ul class="cart-header2 simpleCart_shelfItem">
+                <?php
+               
+						  //requete client !
+						  $reponse=$bd->prepare('SELECT * FROM panier,produit where ID=ID_prod');
+		                  $reponse->execute();
+                
+						  while($req=$reponse->fetch()){
+                              ?>
+                            <ul class="cart-header simpleCart-shelfItem">
+                                <form action="" method="post"> <button class="close3" type="submit" name=<?php echo $req['ID_prod']; ?>></button></form>
+                             <li><span class="item_price"><?php echo $req['nom']; ?></span></li>                           
+                             <li><span><?php echo $req[' ']; ?></span></li>
+                             <li><span class="item_price"><?php echo $req['categorie']; ?></span></li>
+                                  <div class="clearfix"> </div>
+				            </ul>
+                
+                              
+                          
+                <?php
+                }
+                ?>
+				
+			
+				<!--<ul class="cart-header2 simpleCart_shelfItem">
 					<div class="close3"> </div>
 						<li class="ring-in"><a href="single.php" ><img src="images/c3.jpg" class="img-responsive" alt=""></a>
 						</li>
@@ -67,12 +74,30 @@
 						<li><span class="item_price">$ 360.00</span></li>
 						<li> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>						
 						<div class="clearfix"> </div>
-				</ul>
+				</ul>-->
 			</div>
 			</div>  
 		 </div>
 		</div>
 	</div>
-<!--end-ckeckout-->
-<? include 'includes/footer.php';
-?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php include 'includes/footer.php'; ?>
