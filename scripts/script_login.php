@@ -18,7 +18,7 @@
 	                             die('Erreur : '.$e->getMessage());
 		                    }
 						  //requete client !
-						  $reponse=$bd->prepare('SELECT * FROM membre where username=? AND password=?');
+						  $reponse=$bd->prepare('SELECT * FROM membre m ,client c where m.username=? AND m.password=? And m.username=c.username ');
 		                  $reponse->execute(array($utilisateur,$password));
 						  $req=$reponse->fetch();
 		                  $count=$reponse->rowCount();
@@ -33,6 +33,8 @@
 						       
 							   session_start();
 							   $_SESSION['username']=$req['username'];
+							   $_SESSION['client']=$req['id'];
+
 							   $_SESSION['connected']=true;
 							   header("Location:index.php");
 							}

@@ -19,34 +19,25 @@
 						    {
 	                             die('Erreur : '.$e->getMessage());
 		                    }
-<<<<<<< HEAD
+
             if($_SESSION['connected']=true){
-=======
->>>>>>> origin/master
-							
+		
 						
-	$req1=$bd->query('select pr.* from produit pr
-		');
+	$req1=$bd->query('select pr.* from produit pr');
 						while($data1=$req1->fetch())
 						{   if(isset($_POST[$data1['ID']])){
-<<<<<<< HEAD
-								$d=$bd->query('Insert into panier(ID_prod) values('.$data1['ID'].') ');
-=======
-								$d=$bd->quezy'Insert into panier values() ');
->>>>>>> origin/master
-								
+
+
+								$d=$bd->query('Insert into panier values("'.$req['id'].'",'.$data1['ID'].',1) ');
 								break;
 							}
 						}
 						
-						
-						
-				
-<<<<<<< HEAD
+
+
+
 $reponse=$bd->query('select pr.* from produit pr');
-=======
-$reponse=$req1=$bd->query('select pr.* from produit pr');
->>>>>>> origin/master
+
 		                  $reponse->execute();
                 
 						  while($req=$reponse->fetch()){
@@ -58,11 +49,9 @@ $reponse=$req1=$bd->query('select pr.* from produit pr');
 					   <div class="home-product-top">
 					      <a href="#"><img src="images/h19.jpg" alt="" class=" zoom-img"></a>
 					   </div>
-<<<<<<< HEAD
+
 					   <h3> <form method="post" action="">
-=======
-					   <h3> <form method="post" action="produit-m.php">
->>>>>>> origin/master
+
 					   	<button class="btn btn-sm btn-warning pull-right" type="submit" name="<?php echo $req['ID'];?>" >add</button></h3>
 						</form><div class="home-product-bottom">
 		
@@ -73,11 +62,10 @@ $reponse=$req1=$bd->query('select pr.* from produit pr');
 						</div>
 					</div>
 				 </div>
-<<<<<<< HEAD
+
 			   <?php }} ?>
-=======
-			   <?php } ?>
->>>>>>> origin/master
+
+
 			      
 			      <div class="clearfix"> </div>
 			  </div>
