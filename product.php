@@ -7,7 +7,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--product start here-->
 <div class="product">
 	<div class="container">
+		<h2> Produits<h2/>
 		<div class="product-main">
+
 			  <div class=" product-menu-bar">
 			    	<div class="col-md-3 prdt-right">
 					<div class="w_sidebar">

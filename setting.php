@@ -2,9 +2,10 @@
 
 <div class="ckeckout">
 		<div class="container">
+			<h2>Gestion Produits</h2>
 			<div class="ckeckout-top">
 			<div class=" cart-items heading">
-			 <h1><li style="list-style:none;"> <a href="#" class="add-cart cart-check item_add">Add to cart</a></li>	</h1>
+			 
 				<?php 
 					    try
 						    {
@@ -37,9 +38,9 @@
 			<div class="in-check">
 				<ul class="unit">
 					<li><span>Username</span></li>
-					<li><span>Date inscription</span></li>		
-					<li><span>email</span></li>
-					<li><span>Details Edit </span></li>
+					<li><span>Date d'inscription </span></li>		
+					<li><span>email  </span></li>
+					
 					<li> </li>
 					<div class="clearfix"> </div>
 				</ul>

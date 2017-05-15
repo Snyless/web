@@ -57,62 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					        <ul class="nav navbar-nav">
 					        	   <li><a href="index.php">Home</a></li>
-						             <li class="dropdown">
-						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
-						             <ul class="dropdown-menu multi-column columns-1">
-							            <div class="row">
-								            <div class="col">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product.php">Cap & Hats</a></li>
-										            <li><a href="product.php">Jackets & Coats</a></li>
-										            <li><a href="product.php">Jeans</a></li>
-										            <li><a href="product.php">Shirts</a></li>
-										            <li><a href="product.php">Shoes,Boots</a></li>
-										            <li><a href="product.php">Shorts</a></li>
-									            </ul>
-								            </div>
-								            
-							            </div>
-						            </ul>
-						        </li>
-						            <li class="dropdown">
-						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
-						            <ul class="dropdown-menu multi-column columns-1">
-							            <div class="row">
-								            <div class="col">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product.php">Cap & Hats</a></li>
-										            <li><a href="product.php">Jackets & Coats</a></li>
-										            <li><a href="product.php">Jeans</a></li>
-										            <li><a href="product.php">Shirts</a></li>
-										            <li><a href="product.php">Shoes,Boots</a></li>
-										            <li><a href="product.php">Shorts</a></li>
-									            </ul>
-								            </div>
-								            
-							            </div>
-						            </ul>
-						        </li>
-						         <li class="dropdown">
-						        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kids<b class="caret"></b></a>
-						            <ul class="dropdown-menu multi-column columns-1">
-							            <div class="row">
-								            <div class="col">
-									            <ul class="multi-column-dropdown">
-										            <li><a href="product.php">Cap & Hats</a></li>
-										            <li><a href="product.php">Jackets & Coats</a></li>
-										            <li><a href="product.php">Jeans</a></li>
-										            <li><a href="product.php">Shirts</a></li>
-										            <li><a href="product.php">Shoes,Boots</a></li>
-										            <li><a href="product.php">Shorts</a></li>
-									            </ul>
-								            </div>
-								            
-							            </div>
-						            </ul>
-						           
-						        </li>
-						        
+					        	     <li><a href="product-m.php">Produits</a></li>
+					        	   
 					        </ul>
 					    </div>
 					    <!--/.navbar-collapse-->
@@ -142,15 +88,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <span class="dropdown" id="header_membre" style="display:none;">
                                 <a href="#" style="color:black" class="dropdown-toggle" data-toggle="dropdown"><h5><i class="hd-dign"></i><?php echo $_SESSION['username']; ?> <b class="caret"></b></h5></a>
                     <ul class="dropdown-menu">
-                        <li>
-                            <a href="profile.php"><i class="hd-user"></i> Profile</a>
-                        </li>
+                       
                        
                         <li id="header_administrateur" style="display:none;">
-                            <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                            <a href="setting.php"><i class="fa fa-fw fa-gear"></i> Gestion users</a>
                         </li>
                           <li id="header_produit" style="display:none;">
-                            <a href="setting_product.php"><i class="fa fa-fw fa-gear"></i> Setting product</a>
+                            <a href="setting_product.php"><i class="fa fa-fw fa-gear"></i>Produits</a>
                         </li>
                         <li class="divider"></li>
                         <li>

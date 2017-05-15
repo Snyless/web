@@ -54,7 +54,7 @@ VALUES(?)');
 $reponse->execute(array($username));
 	
 	 $_SESSION['username']=$username;
-   header("Location:index.php");
+   header("Location:login.php");
 												  
   }
 else
